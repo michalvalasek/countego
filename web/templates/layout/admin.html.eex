@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>CountEgo Admin</title>
+  <link rel="stylesheet" href="<%= static_path(@conn, "/css/admin.css") %>">
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <%= render "_admin_navbar.html", assigns %>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <%= render "_admin_sidebar.html", assigns %>
+      <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <%#= bootstrap_flash %>
+        <%= render @view_module, @view_template, assigns %>
+      </div>
+    </div>
+  </div>
+
+  <div id="loading-overlay">
+    <%#= image_tag 'loading.gif', alt: 'Načítava sa...' %>
+  </div>
+  <script src="<%= static_path(@conn, "/js/vendor.js") %>"></script>
+  <script src="<%= static_path(@conn, "/js/admin.js") %>"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+<h2>Counters</h2>
+
+<%= table ["Name", "Page ID", "Likes", ""], Enum.map(@counters, fn c -> render "_counter.html", counter: c, conn: @conn end) %>
+
+<%= nav_button counter_path(@conn, :new), "New counter", icon: "plus", class: "success" %>

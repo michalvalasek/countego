@@ -1,0 +1,4 @@
+<h1><%= @counter.name %></h1>
+
+<div id="counter" data-initial-count="<%= @counter.likes %>" data-url="<%= api_counter_path(@conn, :counter, @counter) %>">
+</div>

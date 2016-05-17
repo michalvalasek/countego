@@ -1,0 +1,7 @@
+<%= nav_button counter_path(@conn, :index), "Back to list", icon: "angle-double-left" %>
+
+<%= page_header "New counter" %>
+
+<%= render "form.html", changeset: @changeset,
+                        action: counter_path(@conn, :create),
+                        back_path: counter_path(@conn, :index) %>

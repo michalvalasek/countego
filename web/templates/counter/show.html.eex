@@ -1,0 +1,10 @@
+<%= nav_button counter_path(@conn, :edit, @counter), "Edit", icon: "pencil", class: "primary" %>
+<%= nav_button counter_path(@conn, :index), "Back to list", icon: "angle-double-left" %>
+
+<%= page_header raw("Counter: <small>#{@counter.name}</small>") %>
+
+<%= preview_table [
+  {"Name", @counter.name},
+  {"Page ID", @counter.page_id},
+  {"Likes", to_string(@counter.likes)}
+] %>

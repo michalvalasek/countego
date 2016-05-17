@@ -1,0 +1,19 @@
+<h1>CountEgo</h1>
+
+<div>
+  <%= if @current_user do %>
+    You're logged in. Go to <%= link "Admin UI", to: counter_path(@conn, :index) %> or <%= link "Logout", to: session_path(@conn, :delete), method: :delete %>.
+  <% else %>
+    <%= link "Login", to: "/login" %>
+  <% end %>
+</div>
+
+<hr>
+
+<h3>Counters:</h3>
+
+<ul>
+  <%= for counter <- @counters do %>
+    <li><%= link counter.name, to: front_path(@conn, :counter, counter) %></li>
+  <% end %>
+</ul>

@@ -1,0 +1,10 @@
+<tr>
+  <td><%= link @counter.name, to: counter_path(@conn, :show, @counter) %></td>
+  <td><%= @counter.page_id %></td>
+  <td><%= @counter.likes %></td>
+  <td class="record-actions text-right">
+    <%= link icon("search"), to: front_path(@conn, :counter, @counter), target: "_blank", class: "btn btn-xs btn-default", title: "Show live counter in new window" %>
+    <%= link icon("pencil"), to: counter_path(@conn, :edit, @counter), class: "btn btn-xs btn-primary", title: "Edit" %>
+    <%= link icon("trash-o"), to: counter_path(@conn, :delete, @counter), method: :delete, data: [confirm: "Do you really want to delete this Counter?"], class: "btn btn-xs btn-danger btn-delete", title: "Delete" %>
+  </td>
+</tr>

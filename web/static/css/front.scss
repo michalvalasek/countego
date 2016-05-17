@@ -1,0 +1,12 @@
+$icon-font-path: "/fonts/"; /* use fonts from priv/static/fonts/ */
+@import "bootstrap";
+@import "flipclock";
+
+#counter {
+  zoom: 2.5;
+  -moz-transform: scale(2.5);
+}
+
+form.link {
+  display: inline;
+}

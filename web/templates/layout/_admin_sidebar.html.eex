@@ -1,0 +1,6 @@
+<div class="col-sm-3 col-md-2 sidebar">
+  <ul class="nav nav-sidebar">
+    <%= navigation_item @conn, "Counters", counter_path(@conn, :index) %>
+    <%= navigation_item @conn, icon("plus", append: "New Counter"), counter_path(@conn, :new) %>
+  </ul>
+</div>

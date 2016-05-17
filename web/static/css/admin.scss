@@ -1,0 +1,237 @@
+$icon-font-path: "/fonts/"; /* use fonts from priv/static/fonts/ */
+@import "bootstrap";
+@import "font-awesome";
+
+a:focus {
+  outline: none;
+}
+
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+}
+
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+
+#navbar {
+  .form-control {
+    margin-bottom: 0;
+  }
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+  }
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+// list groups
+.list-group {
+  .list-group-item.indent-1 {
+    padding-left: 1em;
+  }
+  .list-group-item.indent-2 {
+    padding-left: 2em;
+  }
+  .list-group-item.indent-3 {
+    padding-left: 3em;
+  }
+}
+
+// Tables
+.table-responsive {
+  table {
+    tr.indent-1 {
+      td:first-child {
+        padding-left: 2em;
+      }
+    }
+    tr.indent-2 {
+      td:first-child {
+        padding-left: 4em;
+      }
+    }
+    tr.indent-3 {
+      td:first-child {
+        padding-left: 6em;
+      }
+    }
+  }
+}
+
+table {
+  .record-actions {
+    form {
+      display: inline;
+    }
+  }
+}
+
+#text-tabs {
+  .form-group {
+    margin-bottom: 0;
+    input, textarea {
+      margin-bottom: 0;
+    }
+  }
+  .remove-association-wrapper {
+    padding-top: 27px;
+  }
+}
+
+.col-md-6 .form-group {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.dashboard-panel {
+  .big-number {
+    font-size: 54px;
+  }
+  table {
+    margin-bottom: 0;
+  }
+}
+
+#loading-overlay {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5) none repeat scroll 0% 0%;
+  z-index: 1000;
+  text-align: center;
+
+  img {
+    width: 120px;
+    margin-top: 200px;
+  }
+}
+
+.bs-callout {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-radius: 3px;
+  background: #f9f9f9;
+}
+
+.bs-callout-info {
+  border-left-color: #1b809e;
+}
+
+table.table-borderless {
+  border: 0px none;
+  tr {
+    border: 0px none;
+    td {
+      border: 0px none;
+    }
+  }
+}
+
+.subforms {
+  .btn-remove-subform {
+    float: right;
+  }
+}
+
+img[style*="float: left"] {
+  padding-right: 1em;
+}
