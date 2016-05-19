@@ -7,6 +7,7 @@ Simple example web application written in [Elixir](https://github.com/elixir-lan
   * Custom rails-style helpers for the admin UI
   * Client-side dependencies (javascripts, styles) managed via NPM
   * Brunch configured to integrate SCSS, jQuery, 3rd party jQuery plugin and to build separate bundles for public and for admin UI
+  * Special action (`FrontController.counter`) that handles both HTML and JSON requests (similar to what rails app achieves with the `respond_to` method).
 
 Do you see something strange/wrong/unidiomatic? That's entirely possible (I'm just beginning with Elixir/Phoenix)! Please let me know in a comment and I'll be super happy to fix/improve it.
 
