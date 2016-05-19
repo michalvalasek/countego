@@ -1,5 +1,15 @@
 # CountEgo
 
+Simple web application written in [Elixir](https://github.com/elixir-lang/elixir)/[Phoenix](https://github.com/phoenixframework/phoenix) which allows user to create live updating counters for public Facebook pages.
+  * MongoDB as database via [Mongo.Ecto](https://github.com/michalmuskala/mongodb_ecto)
+  * Custom simple authentication module
+  * Two different layouts (public and admin)
+  * Custom rails-style helpers for the admin UI
+  * Client-side dependencies (javascripts, styles) managed via NPM
+  * Brunch configured to integrate SCSS, jQuery, 3rd party jQuery plugin and to build separate bundles for public and for admin UI
+
+Do you see something strange/wrong/unidiomatic? That's entirely possible (I'm just beginning with Elixir/Phoenix)! Please let me know in a comment and I'll be super happy to fix/improve it.
+
 To start your Phoenix app:
 
   * Install dependencies with `mix deps.get`
@@ -10,13 +20,3 @@ To start your Phoenix app:
   * Log in to the Admin UI and create your first counter by entering PageID of a public FB page.
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
-
-Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
-
-## Learn more
-
-  * Official website: http://www.phoenixframework.org/
-  * Guides: http://phoenixframework.org/docs/overview
-  * Docs: http://hexdocs.pm/phoenix
-  * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix
