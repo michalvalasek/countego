@@ -1,6 +1,6 @@
 # CountEgo
 
-Simple web application written in [Elixir](https://github.com/elixir-lang/elixir)/[Phoenix](https://github.com/phoenixframework/phoenix) which allows user to create live updating counters for public Facebook pages.
+Simple example web application written in [Elixir](https://github.com/elixir-lang/elixir)/[Phoenix](https://github.com/phoenixframework/phoenix) which allows user to create live updating counters for public Facebook pages.
   * MongoDB as database via [Mongo.Ecto](https://github.com/michalmuskala/mongodb_ecto)
   * Custom simple authentication module
   * Two different layouts (public and admin)
