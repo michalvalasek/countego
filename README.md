@@ -13,11 +13,11 @@ Do you see something strange/wrong/unidiomatic? That's entirely possible (I'm ju
 
 To start your Phoenix app:
 
-  * Install dependencies with `mix deps.get`
-  * Install Node.js dependencies with `npm install`
-  * Create the `config/dev.secret.exs` file and fill in the admin user email and password
-  * Seed the database with `mix run priv/repo/seeds.exs`
+  * Run the install script: `bin/setup.sh`
+  * Or:
+    * Create the `config/dev.secret.exs` file and fill in the admin user email and password    
+    * Install dependencies with `mix deps.get`
+    * Install Node.js dependencies with `npm install`
+    * Seed the database with `mix run priv/repo/seeds.exs`
   * Start Phoenix endpoint with `mix phoenix.server`
-  * Log in to the Admin UI and create your first counter by entering PageID of a public FB page.
-
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+  * Log in to the Admin UI at [`localhost:4000/login`](http://localhost:4000/login) and create your first counter by entering PageID of a public FB page.
