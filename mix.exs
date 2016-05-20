@@ -19,7 +19,7 @@ defmodule CountEgo.Mixfile do
   def application do
     [mod: {CountEgo, []},
      applications: [:phoenix, :phoenix_html, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :mongodb_ecto, :comeonin]]
+                    :phoenix_ecto, :mongodb_ecto, :comeonin, :httpoison]]
   end
 
   # Specifies which paths to compile per environment.
@@ -37,7 +37,8 @@ defmodule CountEgo.Mixfile do
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.9"},
      {:comeonin, "~> 2.4.0"},
-     {:cowboy, "~> 1.0"}]
+     {:cowboy, "~> 1.0"},
+     {:httpoison, "~> 0.8.0"}]
   end
 
   # Aliases are shortcut or tasks specific to the current project.
